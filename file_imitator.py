@@ -10,7 +10,8 @@ file_ext_lock = True
 
 #extension suffix of dmc5 efx files
 file_ext = "efx.1769672"
-print("\nfile extension is set to: " + file_ext + "\n")
+print("\nFile extension is set to: " + file_ext + "\n")
+print("File extension lock is set to: " + str(file_ext_lock) + ". only files with that extension will be immitated/duplicated\n")
 
 #strips the input directory string of single and double quotations if the string has them (os doesn't accept quotations)
 def stripper(directory):
@@ -57,7 +58,7 @@ else:
         file_list.append(f)
 
 #immitates (duplicates) files from the list
-print("\nimmitating files... \n\n")
+print("\nimmitating files... \n")
 for n in file_list:
     new_output = (output_dir + "\\" + n)
     shutil.copyfile(base_file, new_output)
