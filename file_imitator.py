@@ -11,7 +11,7 @@ file_ext_lock = True
 #extension suffix of dmc5 efx files
 file_ext = "efx.1769672"
 if file_ext_lock == True:
-    dupID = (". Anly files with that extension will be immitated/duplicated\n")
+    dupID = (". Only files with that extension will be immitated/duplicated\n")
 elif file_ext_lock == False:
     dupID = (". All files in the folder will be immitated/duplicated\n")
 print("\nFile extension is set to: " + file_ext + "\n")
