@@ -4,6 +4,7 @@ from os import path
 import shutil
 
 #this script was created to help me mass duplicate a barebones/nearly empty efx file and rename it to an entire directory/folder/list of other efx files. Doing so helps me determine which efx aren't affected in-game (process of elimination)
+#instructions: run on commandline, provide the name of the base file you wish to duplicate, then it will be duplicated and renamed to everything in the Input folder
 
 #turn this on if you want to only duplicate files with a specific extension
 file_ext_lock = True
